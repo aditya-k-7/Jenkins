@@ -9,13 +9,13 @@ agent any
         stage('Build Code') {
             steps {
                 sh "chmod u+x Difference.py"
-                sh "python3 Difference.py"
+                sh "./Difference.py"
             }
         }
      stage('Test Code') {
             steps {
                 sh "chmod u+x Test.py"
-                sh "python3 Test.py"
+                sh "./Test.py"
             }
         }
     } 
